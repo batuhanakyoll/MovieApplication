@@ -24,17 +24,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.fragment.MainFragment">
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/slider_rv"
             android:layout_width="0dp"
+            android:layout_height="300dp"
             android:adapter="@{sliderAdapter}"
-            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-            app:spanCount="1"
             android:orientation="horizontal"
-            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:spanCount="1" />
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_card"
             android:adapter="@{movieAdapter}"

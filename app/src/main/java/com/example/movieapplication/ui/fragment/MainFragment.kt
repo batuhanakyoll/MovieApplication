@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.movieapplication.R
 import com.example.movieapplication.data.entity.Movie
-import com.example.movieapplication.data.entity.MovieNowPlaying
+
 import com.example.movieapplication.databinding.FragmentMainBinding
 import com.example.movieapplication.ui.adapter.MovieAdapter
 import com.example.movieapplication.ui.adapter.SliderAdapter

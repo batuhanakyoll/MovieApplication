@@ -3,9 +3,11 @@ package com.example.movieapplication.ui.adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.movieapplication.data.entity.Movie
 import com.example.movieapplication.databinding.CardTasarimBinding
+import com.example.movieapplication.ui.fragment.MainFragmentDirections
 import com.example.movieapplication.viewmodel.MainFragmentViewModel
 import com.squareup.picasso.Picasso
 
@@ -34,6 +36,10 @@ class MovieAdapter(var mContex : Context , var movieList:List<Movie> , var viewM
         val image_url = movie.poster
         val last_url = "${url}${image_url}"
         Picasso.get().load(last_url).into(t.imageView)
+
+        t.cardViewFilm.setOnClickListener {
+            val gecis = MainFragmentDirections.dGo(movie = movie)
+            Navigation.findNavController(it).navigate(gecis) }
 
     }
 

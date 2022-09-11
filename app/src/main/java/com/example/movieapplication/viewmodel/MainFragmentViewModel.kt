@@ -3,7 +3,7 @@ package com.example.movieapplication.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.movieapplication.data.entity.Movie
-import com.example.movieapplication.data.entity.MovieNowPlaying
+
 import com.example.movieapplication.data.repo.MovieDaoRepo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
@@ -12,7 +12,7 @@ import javax.inject.Inject
 class MainFragmentViewModel @Inject constructor(var mrepo:MovieDaoRepo) :ViewModel() {
 
     var movieList = MutableLiveData<List<Movie>>()
-    var npList = MutableLiveData<List<MovieNowPlaying>>()
+    var npList = MutableLiveData<List<Movie>>()
     init {
         allMovie()
         allNpMovie()

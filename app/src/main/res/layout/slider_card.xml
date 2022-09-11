@@ -7,6 +7,7 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewMovieSlider"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -17,7 +18,7 @@
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="0dp"
-                android:layout_height="256dp"
+                android:layout_height="300dp"
                 android:scaleType="fitXY"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -36,9 +37,10 @@
                 android:layout_margin="1dp"
                 android:alpha="100"
                 android:ellipsize="end"
-                android:gravity="center"
+                android:maxLines="1"
+
                 android:text="TextView"
-                android:textAlignment="viewStart"
+
                 android:textColor="#FFFF"
                 android:textSize="20dp"
                 android:textStyle="bold"
@@ -55,6 +57,7 @@
                 android:layout_height="32dp"
                 android:alpha="100"
                 android:ellipsize="end"
+                android:maxLines="2"
                 android:text="TextView"
                 android:textAlignment="viewStart"
                 android:textColor="#FFFF"
